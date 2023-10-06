@@ -55,4 +55,14 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Model\" />
+	  <None Remove="Resources\Raw\monkeydata.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Model\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Raw\monkeydata.json" />
+	</ItemGroup>
 </Project>
